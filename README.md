@@ -16,7 +16,7 @@ python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`  
 
 Run the Application:
-python app.py  
+python3 app.py or  python3 aap.py
 
 Access the App:
 Open your browser and visit:
