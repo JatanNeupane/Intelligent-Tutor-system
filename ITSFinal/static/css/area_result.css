@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f3f4f6, #ffffff);
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #4facfe;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #2a7fff;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0.8rem 0;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #2a7fff;
+}
+
+/* Results Section */
+.container.result {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1.8rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.result-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.steps {
+    margin-bottom: 1rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.calculation {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.4rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #2a7fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1a5bb8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #555;
+    font-size: 0.9rem;
+    background: #333;
+    color: white;
+    margin-top: 2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}

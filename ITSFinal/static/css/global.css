@@ -1,0 +1,49 @@
+/* learn_geometry.css */
+
+/* Override global container styles for this page */
+.container h2, .container h3 {
+    color: #4CAF50; /* Consistent theme color */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.container ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.container ul li {
+    list-style: none;
+}
+
+.container ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: white;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #4CAF50;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container ul li a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+} */

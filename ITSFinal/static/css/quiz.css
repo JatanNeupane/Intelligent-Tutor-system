@@ -1,0 +1,246 @@
+/* General Reset */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styles */
+body {
+    background: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 10px;
+}
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+/* Quiz Container */
+.quiz-container {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+/* Question Layout */
+.question {
+    margin-bottom: 20px;
+}
+
+/* Label Styles */
+.question label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Checkbox Options */
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+/* Styling for submit and back buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.submit-btn, .back-home-btn {
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    width: 45%;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.back-home-btn {
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.back-home-btn:hover {
+    background-color: #e53935;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .quiz-container {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .submit-btn, .back-home-btn {
+        width: 100%;
+    }
+
+
+
+
+    /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Header Section */
+header {
+    background-color: #3498db;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Results Container */
+.results-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+.score-section {
+    margin-bottom: 30px;
+}
+
+.score-section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.score {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2ecc71; /* Green for success */
+}
+
+.feedback {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #f39c12; /* Yellow for feedback */
+}
+
+/* Button Styles */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+button, a {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Take Quiz Again Button */
+.take-quiz-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+}
+
+.take-quiz-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Back to Home Button */
+.back-home-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+}
+
+.back-home-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+}

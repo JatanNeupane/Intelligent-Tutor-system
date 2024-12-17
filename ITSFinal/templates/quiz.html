@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/quiz.css') }}">
+</head>
+<body>
+    <!-- Header section for consistent styling -->
+    <header>
+        <h1>Geometry Quiz</h1>
+    </header>
+
+    <div class="quiz-container">
+        <form method="POST">
+            <!-- Question 1 -->
+            <div class="question">
+                <label for="q1">Question 1: Which shape has four equal sides?</label>
+                <div class="options">
+                    <input type="checkbox" name="q1" value="square" id="q1-square"><label for="q1-square">Square</label>
+                    <input type="checkbox" name="q1" value="rectangle" id="q1-rectangle"><label for="q1-rectangle">Rectangle</label>
+                    <input type="checkbox" name="q1" value="circle" id="q1-circle"><label for="q1-circle">Circle</label>
+                    <input type="checkbox" name="q1" value="triangle" id="q1-triangle"><label for="q1-triangle">Triangle</label>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <label for="q2">Question 2: What is the formula for the area of a triangle?</label>
+                <div class="options">
+                    <input type="checkbox" name="q2" value="base*height/2" id="q2-formula1"><label for="q2-formula1">Base * Height / 2</label>
+                    <input type="checkbox" name="q2" value="side^2" id="q2-formula2"><label for="q2-formula2">Side^2</label>
+                    <input type="checkbox" name="q2" value="pi*radius^2" id="q2-formula3"><label for="q2-formula3">Pi * Radius^2</label>
+                    <input type="checkbox" name="q2" value="length*width" id="q2-formula4"><label for="q2-formula4">Length * Width</label>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <label for="q3">Question 3: Which shape has no straight lines?</label>
+                <div class="options">
+                    <input type="checkbox" name="q3" value="circle" id="q3-circle"><label for="q3-circle">Circle</label>
+                    <input type="checkbox" name="q3" value="triangle" id="q3-triangle"><label for="q3-triangle">Triangle</label>
+                    <input type="checkbox" name="q3" value="square" id="q3-square"><label for="q3-square">Square</label>
+                    <input type="checkbox" name="q3" value="rectangle" id="q3-rectangle"><label for="q3-rectangle">Rectangle</label>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <label for="q4">Question 4: What is the sum of the interior angles of a triangle?</label>
+                <div class="options">
+                    <input type="checkbox" name="q4" value="180" id="q4-180"><label for="q4-180">180°</label>
+                    <input type="checkbox" name="q4" value="360" id="q4-360"><label for="q4-360">360°</label>
+                    <input type="checkbox" name="q4" value="270" id="q4-270"><label for="q4-270">270°</label>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <label for="q5">Question 5: Which of the following shapes has opposite sides that are equal?</label>
+                <div class="options">
+                    <input type="checkbox" name="q5" value="rectangle" id="q5-rectangle"><label for="q5-rectangle">Rectangle</label>
+                    <input type="checkbox" name="q5" value="circle" id="q5-circle"><label for="q5-circle">Circle</label>
+                    <input type="checkbox" name="q5" value="triangle" id="q5-triangle"><label for="q5-triangle">Triangle</label>
+                    <input type="checkbox" name="q5" value="square" id="q5-square"><label for="q5-square">Square</label>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <label for="q6">Question 6: Which of these is a 3-dimensional shape?</label>
+                <div class="options">
+                    <input type="checkbox" name="q6" value="cube" id="q6-cube"><label for="q6-cube">Cube</label>
+                    <input type="checkbox" name="q6" value="circle" id="q6-circle"><label for="q6-circle">Circle</label>
+                    <input type="checkbox" name="q6" value="square" id="q6-square"><label for="q6-square">Square</label>
+                    <input type="checkbox" name="q6" value="triangle" id="q6-triangle"><label for="q6-triangle">Triangle</label>
+                </div>
+            </div>
+
+            <!-- Submit and Back Buttons -->
+            <div class="buttons">
+                <input type="submit" value="Submit Quiz" class="submit-btn">
+                <a href="/" class="back-home-btn">Back to Home</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

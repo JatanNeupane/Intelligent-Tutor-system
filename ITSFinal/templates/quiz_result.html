@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/quiz.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/q_results.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Quiz Results</h1>
+    </header>
+
+    <div class="results-container">
+        <div class="score-section">
+            <h2>Your Score:</h2>
+            <p class="score">{{ score }} out of {{ total_questions }}</p>
+            <p class="feedback">{{ feedback }}</p>
+        </div>
+
+        <div class="buttons">
+            <a href="/quiz" class="take-quiz-btn">Take Quiz Again</a>
+            <a href="/" class="back-home-btn">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Learn Geometry</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Learn Geometry</h1>
+            <p>Explore, Learn, and Master Geometry</p>
+            <a href="/learn_geometry" class="cta-btn">Start Learning</a>
+        </div>
+    </section>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/learn_geometry" class="nav-link">Learn Geometry</a>
+        <a href="/quiz" class="nav-link">Quiz</a>
+    </nav>
+    
+    <!-- Features Section -->
+    <div class="features">
+        <div class="feature">
+            <img src="{{ url_for('static', filename='images/shapes.jpg') }}" alt="Learn Shapes" class="feature-img">
+            <h3>Learn About Shapes</h3>
+            <p>Get detailed information about various geometric shapes and their properties.</p>
+            <a href="/learn_geometry" class="cta-btn">Learn More</a>
+        </div>
+        <div class="feature">
+            <img src="{{ url_for('static', filename='images/area.jpg') }}" alt="Calculate Shapes" class="feature-img">
+            <h3>Calculate Area</h3>
+            <p>Use interactive tools to calculate the area of different shapes easily.</p>
+            <a href="/area_calculation" class="cta-btn">Try It Now</a>
+        </div>
+        <div class="feature">
+            <img src="{{ url_for('static', filename='images/quiz.jpg') }}" alt="Quiz Shapes" class="feature-img">
+            <h3>Take a Quiz</h3>
+            <p>Test your geometry knowledge with fun and challenging quizzes!</p>
+            <a href="/quiz" class="cta-btn">Start Quiz</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>Follow us on social media:</p>
+        <div class="social-links">
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+        <p>Contact us: xyz@yorksj.co.uk</p>
+    </footer>
+</body>
+</html>

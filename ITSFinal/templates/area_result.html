@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Calculation Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/area_result.css') }}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Area Calculation Result</h1>
+    </header>
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="/">🏠 Home</a>
+        <a href="/learn_geometry">📚 Learn Geometry</a>
+        <a href="/quiz">🧠 Quiz</a>
+    </nav>
+
+    <!-- Results Section -->
+    <div class="container result">
+        <div class="result-box">
+            <h3>Area of the {{ shape }}</h3>
+            <p class="steps">{{ steps }}</p>
+            <p class="calculation">
+                The calculated area is: <strong>{{ area }}</strong>
+            </p>
+            <a href="/" class="btn">Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Geometry Learning App </p>
+    </footer>
+</body>
+</html>

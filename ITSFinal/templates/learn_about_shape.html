@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn About {{ shape }}</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/learn_shape.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Learn About {{ shape }}</h1>
+    </header>
+    
+    <div class="container">
+        <p class="description">{{ description }}</p>
+        
+        <div class="area-formula">
+            <h2>Area Formula:</h2>
+            <p>{{ area_formula }}</p>
+        </div>
+
+        <div class="actions">
+            <a href="/area_calculation/{{ shape }}" class="button">Calculate Area</a>
+            <a href="/learn_geometry" class="button secondary">Back to Geometry Lessons</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Geometry Learning App</p>
+    </footer>
+</body>
+</html>

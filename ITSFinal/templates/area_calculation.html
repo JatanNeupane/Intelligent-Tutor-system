@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Area of {{ shape }}</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/calculate_area.css') }}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Calculate the Area of a {{ shape }}</h1>
+    </header>
+    
+    <!-- Main Container Section -->
+    <div class="container">
+        <form method="POST">
+            {% if shape == 'Triangle' %}
+                <div class="form-group">
+                    <label for="base">Base:</label>
+                    <input type="number" name="base" id="base" placeholder="Enter base" required>
+                </div>
+                <div class="form-group">
+                    <label for="height">Height:</label>
+                    <input type="number" name="height" id="height" placeholder="Enter height" required>
+                </div>
+            {% elif shape == 'Rectangle' %}
+                <div class="form-group">
+                    <label for="length">Length:</label>
+                    <input type="number" name="length" id="length" placeholder="Enter length" required>
+                </div>
+                <div class="form-group">
+                    <label for="width">Width:</label>
+                    <input type="number" name="width" id="width" placeholder="Enter width" required>
+                </div>
+            {% elif shape == 'Circle' %}
+                <div class="form-group">
+                    <label for="radius">Radius:</label>
+                    <input type="number" name="radius" id="radius" placeholder="Enter radius" required>
+                </div>
+            {% elif shape == 'Square' %}
+                <div class="form-group">
+                    <label for="side">Side:</label>
+                    <input type="number" name="side" id="side" placeholder="Enter side length" required>
+                </div>
+            {% endif %}
+            <button type="submit" class="button">Calculate Area</button>
+        </form>
+        
+        <div class="back-link">
+            <a href="/">← Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Geometry Learning App </p>
+    </footer>
+</body>
+</html>

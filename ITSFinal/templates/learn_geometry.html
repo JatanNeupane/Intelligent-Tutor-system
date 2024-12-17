@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Geometry</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}"> -->
+</head>
+<body>
+    <!-- <header>
+        <div class="hero">
+            <h1>Learn About Geometry</h1>
+            <p>Explore different shapes, learn their properties, and calculate their areas!</p>
+        </div>
+    </header> -->
+    
+    <nav>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/quiz">Quiz</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="section">
+            <h2>Choose a Shape to Learn More:</h2>
+            <ul class="shape-list">
+                <li><a href="/learn_about_shape/Triangle">Triangle</a></li>
+                <li><a href="/learn_about_shape/Rectangle">Rectangle</a></li>
+                <li><a href="/learn_about_shape/Circle">Circle</a></li>
+                <li><a href="/learn_about_shape/Square">Square</a></li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h3>Calculate the Area of a Shape:</h3>
+            <ul class="shape-list">
+                <li><a href="/area_calculation/Triangle">Calculate Area of Triangle</a></li>
+                <li><a href="/area_calculation/Rectangle">Calculate Area of Rectangle</a></li>
+                <li><a href="/area_calculation/Circle">Calculate Area of Circle</a></li>
+                <li><a href="/area_calculation/Square">Calculate Area of Square</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Learn Geometry. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

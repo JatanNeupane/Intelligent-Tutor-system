@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #d6d6ff, #f0f4f8);
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background: #4facfe;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #2a7fff;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+/* Main Container */
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+    border-color: #2a7fff;
+    outline: none;
+}
+
+/* Button Styling */
+.button {
+    padding: 0.75rem 1.25rem;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #2a7fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.button:hover {
+    background-color: #1a5bb8;
+}
+
+/* Back link */
+.back-link {
+    margin: 1.5rem 0 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.back-link a {
+    color: #2a7fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.back-link a:hover {
+    color: #1a5bb8;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #555;
+    background: #333;
+    color: white;
+    margin-top: 2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE rdf:RDF [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+]>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2024/12/ShapeOntology#"
+    xml:base="http://www.semanticweb.org/ontologies/2024/12/ShapeOntology"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2024/12/ShapeOntology"/>
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#Shape"/>
+    <owl:Class rdf:about="#Triangle">
+        <rdfs:subClassOf rdf:resource="#Shape"/>
+    </owl:Class>
+    <owl:Class rdf:about="#Rectangle">
+        <rdfs:subClassOf rdf:resource="#Shape"/>
+    </owl:Class>
+    <owl:Class rdf:about="#Circle">
+        <rdfs:subClassOf rdf:resource="#Shape"/>
+    </owl:Class>
+    <owl:Class rdf:about="#Square">
+        <rdfs:subClassOf rdf:resource="#Shape"/>
+    </owl:Class>
+
+    <!-- Datatype Properties -->
+    <owl:DatatypeProperty rdf:about="#base">
+        <rdfs:domain rdf:resource="#Triangle"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="#height">
+        <rdfs:domain rdf:resource="#Triangle"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="#length">
+        <rdfs:domain rdf:resource="#Rectangle"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="#width">
+        <rdfs:domain rdf:resource="#Rectangle"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="#radius">
+        <rdfs:domain rdf:resource="#Circle"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="#side">
+        <rdfs:domain rdf:resource="#Square"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+
+    <!-- Object Properties -->
+    <owl:ObjectProperty rdf:about="#isAdjacentTo">
+        <rdfs:domain rdf:resource="#Shape"/>
+        <rdfs:range rdf:resource="#Shape"/>
+    </owl:ObjectProperty>
+
+    <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#Triangle1">
+        <rdf:type rdf:resource="#Triangle"/>
+        <base rdf:datatype="&xsd;float">5.0</base>
+        <height rdf:datatype="&xsd;float">10.0</height>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Rectangle1">
+        <rdf:type rdf:resource="#Rectangle"/>
+        <length rdf:datatype="&xsd;float">4.0</length>
+        <width rdf:datatype="&xsd;float">6.0</width>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Circle1">
+        <rdf:type rdf:resource="#Circle"/>
+        <radius rdf:datatype="&xsd;float">3.0</radius>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Square1">
+        <rdf:type rdf:resource="#Square"/>
+        <side rdf:datatype="&xsd;float">4.0</side>
+    </owl:NamedIndividual>
+
+    <!-- Relationships -->
+    <rdf:Description rdf:about="#Triangle1">
+        <isAdjacentTo rdf:resource="#Rectangle1"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Rectangle1">
+        <isAdjacentTo rdf:resource="#Circle1"/>
+    </rdf:Description>
+</rdf:RDF>
